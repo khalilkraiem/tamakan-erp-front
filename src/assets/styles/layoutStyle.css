@@ -17,7 +17,7 @@
   border-right: 1px solid rgba(192, 192, 192, 0.447);
 }
 .SideBarContainer{
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .SideBarContainer .active {
     border-radius: 0px 20px 20px 0;
