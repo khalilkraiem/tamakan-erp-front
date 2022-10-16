@@ -19,8 +19,8 @@ function SideBar() {
             key={i}
             className={
               location.pathname === elem.path
-                ? "active pad10 row spaceBetween pointer h20 white"
-                : "pad10 row spaceBetween pointer h20 gray "
+                ? "active pad10 row spaceBetween pointer h20 padl20 white"
+                : "pad10 row spaceBetween pointer h20 padl20 gray "
             }
             onClick={() => navigate(elem.path)}
           >
@@ -31,7 +31,7 @@ function SideBar() {
                   alt={elem.name}
                   style={{ height: 10, width: 10 }}
                 />
-                <p className="mar10 fzs">{elem.name}</p>
+                <p className="mar10 fzs fwb">{elem.name}</p>
               </div>
               <div>
                 {location.pathname===elem.path&&<img src={selected} alt="" />}

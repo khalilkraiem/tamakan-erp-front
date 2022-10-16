@@ -22,4 +22,5 @@
 .SideBarContainer .active {
     border-radius: 0px 20px 20px 0;
     background: linear-gradient(to right, #0D988C,#1E6EB7);
+    margin-right: 10px;
 }
