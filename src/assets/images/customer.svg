@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="9.263" height="10.296" viewBox="0 0 9.263 10.296">
-  <g id="user" transform="translate(-3.5 -2.5)">
-    <path id="Path_776" data-name="Path 776" d="M12.263,18.1V17.066A2.066,2.066,0,0,0,10.2,15H6.066A2.066,2.066,0,0,0,4,17.066V18.1" transform="translate(0 -5.803)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-    <circle id="Ellipse_84" data-name="Ellipse 84" cx="2.066" cy="2.066" r="2.066" transform="translate(6.066 3)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="12.679" height="10.595" viewBox="0 0 12.679 10.595">
+  <g id="users" transform="translate(-0.5 -2.461)">
+    <path id="Path_777" data-name="Path 777" d="M9.494,18.185V17.123A2.123,2.123,0,0,0,7.37,15H3.123A2.123,2.123,0,0,0,1,17.123v1.062" transform="translate(0 -5.63)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <circle id="Ellipse_85" data-name="Ellipse 85" cx="2.123" cy="2.123" r="2.123" transform="translate(3.123 3)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_778" data-name="Path 778" d="M21.593,18.246V17.184A2.123,2.123,0,0,0,20,15.13" transform="translate(-8.914 -5.691)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_779" data-name="Path 779" d="M16,3.13a2.123,2.123,0,0,1,0,4.114" transform="translate(-7.037 -0.061)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
   </g>
 </svg>
