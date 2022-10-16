@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  height: 60px;
+  top: 0px;
+  width: 100%;
+}
+.HeaderContainer {
+  margin-left: 181px;
+  height: 100%;
+}
+.sideBar {
+  position: fixed;
+  width: 181px;
+  height: 100vh;
+  top: 0px;
+  background-color: white;
+  border-right: 1px solid rgba(192, 192, 192, 0.447);
+}
+.SideBarContainer{
+    margin-top: 60px;
+}
+.SideBarContainer .active {
+    border-radius: 0px 20px 20px 0;
+    background: linear-gradient(to right, #0D988C,#1E6EB7);
+}

@@ -1,0 +1,11 @@
+@import './assets/styles/standardStyle.css';
+@import './assets/styles/layoutStyle.css';
+@import './assets/styles/pageAndViewStyle.css';
+@import './assets/styles/fontStyle.css';
+@import './assets/styles/colorStyle.css';
+
+@import './assets/styles/mediaScreen.css';
+.App {
+    font-family: Cairo;
+} 
+
