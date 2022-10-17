@@ -1,11 +1,20 @@
 .gray {
     color: gray;
 }
+.lightGray {
+    color:rgb(241, 241, 241);
+}
 .white {
     color: white;
 }
 .black {
     color: black;
+}
+.blue{
+    color:#1e6eb7
+}
+.bgLightGray {
+    background-color: rgb(241, 241, 241);
 }
 .bgGray {
     background-color: gray
@@ -17,7 +26,7 @@
     background-color: white;
 }
 .bgBlue {
-    background-color: blue;
+    background-color: #1e6eb7;
 }
 .bgRed {
     background-color: red;

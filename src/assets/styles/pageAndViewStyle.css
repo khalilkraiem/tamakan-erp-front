@@ -6,3 +6,6 @@
 .page {
     
 }
+.line:hover{
+    background-color: rgb(195, 222, 230);
+}

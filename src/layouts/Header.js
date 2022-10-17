@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header ">
       <div className="HeaderContainer">
-        <div className="spaceBetween h100">
+        <div className="spaceBetween h-100">
           <div className="leftHeader cCenter mar30">
             
               <img src={search} alt="search" className="icon mar10" />
