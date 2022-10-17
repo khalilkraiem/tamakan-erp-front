@@ -29,7 +29,8 @@ function SideBar() {
                 <img
                   src={elem.image}
                   alt={elem.name}
-                  style={{ height: 15, width: 15,filter:location.pathname === elem.path? 'brightness(200%)':'' }}
+                  className='icon'
+                  style={{ filter:location.pathname === elem.path? 'brightness(200%)':'' }}
                 />
                 <p className="mar10 fzs fwb">{elem.name}</p>
               </div>

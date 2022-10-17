@@ -8,6 +8,15 @@
   margin-left: 181px;
   height: 100%;
 }
+.headerSearch::-webkit-input-placeholder {
+  font-family: Cairo;
+  opacity: 0.5;
+  font-weight:600;
+}
+.headerUserPhoto {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .sideBar {
   position: fixed;
   width: 181px;
