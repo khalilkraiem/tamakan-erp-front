@@ -13,8 +13,18 @@
 .blue{
     color:#1e6eb7
 }
+.bgLightOrange{
+    background-color: #FBE1C3;
+}
+.bgLightBlue{
+
+    background-color:#D6EBF7
+}
+.bgLightRed{
+    background-color:#F1D1D4
+}
 .bgLightGray {
-    background-color: rgb(241, 241, 241);
+    background-color: #FAFAFA
 }
 .bgGray {
     background-color: gray
@@ -26,7 +36,7 @@
     background-color: white;
 }
 .bgBlue {
-    background-color: #1e6eb7;
+    background-color: #1E6EB7;
 }
 .bgRed {
     background-color: red;

@@ -7,8 +7,8 @@ import { AiOutlineDown } from "react-icons/ai";
 function Header() {
   return (
     <div className="header ">
-      <div className="HeaderContainer">
-        <div className="spaceBetween h-100">
+      <div className="HeaderContainer ">
+        <div className="spaceBetween h-100 bgWhite">
           <div className="leftHeader cCenter mar30">
             
               <img src={search} alt="search" className="icon mar10" />
@@ -35,7 +35,7 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="center">
+        <div className="center bgWhite">
           <hr style={{ height: 0.5, width: "98%" }} className="bgGray op02 br10"></hr>
         </div>
       </div>
