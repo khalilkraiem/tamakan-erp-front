@@ -9,3 +9,9 @@
 .line:hover{
     background-color: #2F81A522
 }
+.modal {
+    font-family: Cairo;
+}
+.ReactModal__Overlay {
+    background-color: rgba(117, 117, 117, 0.719) !important;
+}

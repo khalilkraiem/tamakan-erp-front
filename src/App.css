@@ -11,3 +11,12 @@
     font-family: Cairo;
 } 
 
+input:focus{
+    outline: none;
+    border:1px solid cornflowerblue
+}
+textarea:focus{
+    outline: none;
+    border:1px solid cornflowerblue
+}
+
