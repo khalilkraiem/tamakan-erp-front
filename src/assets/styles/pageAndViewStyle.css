@@ -1,10 +1,10 @@
 .pages {
     margin-left: 181px;
-    margin-top: 60px;
-    padding: 30px;
+    margin-top: 80px;
+    /* padding-top: 30px; */
 }
 .page {
-    
+    padding-top: 50px;
 }
 .line:hover{
     background-color: #2F81A522
