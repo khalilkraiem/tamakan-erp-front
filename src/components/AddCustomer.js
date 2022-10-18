@@ -1,8 +1,8 @@
 import React from 'react'
-import BlueBotton from './BlueBotton'
+import BlueButton from './BlueButton'
 import SelectSmall from './Select'
 
-function AddCustomer() {
+function AddCustomer({setAddCustomerIsOpen}) {
     return (
         <div className='br20 modal bgWhite'>
             <div className='borderbGray spaceBetween h50'>
@@ -85,10 +85,11 @@ function AddCustomer() {
             </div>
             <div className='cCenter'>
                 <div className='mar20'>
-                    <BlueBotton content={'Close'} />
+                    <BlueButton content={'Close'} fn={()=>{setAddCustomerIsOpen(false)
+                    console.log(false);}} />
                 </div>
                 <div className='mar20'>
-                    <BlueBotton content={'Create'} />
+                    <BlueButton content={'Create'} />
                 </div>
             </div>
 

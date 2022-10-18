@@ -6,7 +6,7 @@ import edit from '../assets/images/edit.svg'
 import up from '../assets/images/up.svg'
 import down from '../assets/images/down.svg'
 import LightButton from './LightButton'
-function Table() {
+function Table({setDeleteCustomerIsOpen}) {
     return (
         <div className='bgLightGray pad30 '>
             <div className=''>
@@ -52,12 +52,12 @@ function Table() {
                             </div>
 
 
-                            <div className='h20 w20 br5 bgLightBlue cCenter mar5'>
+                            <div className='h20 w20 br5 bgLightBlue cCenter mar5' >
                                 <img alt='edit' src={edit} className='' />
                             </div>
 
 
-                            <div className='h20 w20 br5 bgLightRed cCenter mar5'>
+                            <div className='h20 w20 br5 bgLightRed cCenter mar5 pointer' onClick={()=>setDeleteCustomerIsOpen(true)} >
                                 <img alt='delete' src={trash} className='' />
                             </div>
 

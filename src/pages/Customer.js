@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Modal from "react-modal";
 import AddCustomer from '../components/AddCustomer';
+import DeleteCustomer from '../components/DeleteCustomer';
 import LightButton from '../components/LightButton'
 import SelectSmall from '../components/Select'
 import Table from '../components/Table'
@@ -23,6 +24,7 @@ Modal.setAppElement("#root");
 function Customer() {
 
   const [addCustomerIsOpen, setAddCustomerIsOpen] = useState(false);
+  const [deleteCustomerIsOpen, setDeleteCustomerIsOpen] = useState(false);
  
  
   return (
@@ -47,7 +49,7 @@ function Customer() {
           </div>
         </div>
       </div>
-      <Table />
+      <Table setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
       <Modal
         isOpen={addCustomerIsOpen}
         onRequestClose={()=>setAddCustomerIsOpen(false)}
@@ -55,7 +57,16 @@ function Customer() {
         backgroundColor={'gray'}
         contentLabel="Add Customer Modal"
       >
-        <AddCustomer />
+        <AddCustomer setAddCustomerIsOpen={setAddCustomerIsOpen} />
+      </Modal>
+      <Modal
+        isOpen={deleteCustomerIsOpen}
+        onRequestClose={()=>setDeleteCustomerIsOpen(false)}
+        style={customStyles}
+        backgroundColor={'gray'}
+        contentLabel="Delete Customer Modal"
+      >
+        <DeleteCustomer setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
       </Modal>
     </div>
   )
