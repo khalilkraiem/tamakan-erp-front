@@ -19,7 +19,7 @@ function SideBar() {
       }
     })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+  }, [])
   return (
     <div className="sideBar ">
       <div>
@@ -27,6 +27,7 @@ function SideBar() {
       </div>
       <div className="SideBarContainer">
         {sideBarData.map((elem, i) => (
+          <div>
           <div
             key={i}
             className={
@@ -45,13 +46,19 @@ function SideBar() {
                 src={elem.image}
                 alt={elem.name}
                 className='icon'
-                style={{ filter: location.pathname === elem.path ? 'brightness(200%)' : '' }}
+                style={{ filter: tag === elem.path ? 'brightness(200%)' : '' }}
               />
               <p className="mar10 fzs fwb">{elem.name}</p>
             </div>
             <div>
-              {location.pathname === elem.path && <img src={selected} alt="" />}
+              {tag === elem.path && <img src={selected} alt="" />}
             </div>
+          </div>
+          {elem.children&&elem.children.map((el,i)=>(
+            <div>
+              <p>{el.name}</p>
+            </div>
+          ))}
           </div>
         ))}
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Modal from "react-modal";
 
-import Table from '../../components/CustomerTable'
+import SupplierTable from '../../components/SupplierTable'
 import AddCustomer from '../../components/AddCustomer';
 import DeleteCustomer from '../../components/DeleteCustomer';
 
@@ -24,7 +24,7 @@ const customStyles = {
 
 Modal.setAppElement("#root");
 
-function CustomerList() {
+function SupplierList() {
     const [addCustomerIsOpen, setAddCustomerIsOpen] = useState(false);
     const [deleteCustomerIsOpen, setDeleteCustomerIsOpen] = useState(false);
     return (
@@ -46,7 +46,7 @@ function CustomerList() {
                     </div>
                 </div>
             </div>
-            <Table setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
+            <SupplierTable setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
             <Modal
                 isOpen={addCustomerIsOpen}
                 onRequestClose={() => setAddCustomerIsOpen(false)}
@@ -70,4 +70,4 @@ function CustomerList() {
     )
 }
 
-export default CustomerList
+export default SupplierList

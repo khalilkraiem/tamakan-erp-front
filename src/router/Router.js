@@ -14,6 +14,8 @@ import Settings from "../pages/Settings"
 import Archive from "../pages/Archive";
 import CustomerList from "../views/Customer/CustomerList";
 import OneCustomer from "../views/Customer/OneCustomer";
+import SupplierList from "../views/purchases/SupplierList";
+import OneSupplier from "../views/purchases/OneSupplier";
 
 
 function Router() {
@@ -24,10 +26,13 @@ function Router() {
         <Route path="*" element={<Main />}>
           <Route index element={<Dashboard />} />
           <Route path="customer" element={<Customer />} >
-            <Route index element={<CustomerList/>}/>
-            <Route path="oneCustomer" element={<OneCustomer />}/>
+            <Route index element={<CustomerList />} />
+            <Route path="oneCustomer" element={<OneCustomer />} />
           </Route>
-          <Route path="purchases" element={<Purchases />} />
+          <Route path="purchases" element={<Purchases />} >
+            <Route index element={<SupplierList />} />
+            <Route path="oneSupplier" element={<OneSupplier />} />
+          </Route>
           <Route path="archive" element={<Archive />} />
           <Route path="organizing" element={<Organizing />} />
           <Route path="requestAndTasks" element={<RequestsAndTasks />} />

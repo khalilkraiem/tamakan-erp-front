@@ -23,6 +23,10 @@ var sideBareData = [
     name: "Purchases",
     path: "/purchases",
     image: purchases,
+    children:[
+      {name:'Supplier',path:'/purchases'},
+      {name:'Puchases order',path:"/purchases/order"}
+    ]
   },
   {
     name: "Organizing",

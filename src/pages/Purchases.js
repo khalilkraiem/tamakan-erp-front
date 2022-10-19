@@ -1,9 +1,13 @@
 import React from 'react'
+import {Outlet} from 'react-router-dom'
 
 function Purchases() {
   return (
     <div className='page'>
-    <div><h2>Purchases</h2></div>
+    <div className='padl50'>
+      <p className='fwb fzxl'>Supplier</p>
+    </div>
+    <Outlet />
   </div>
   )
 }
