@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.svg";
 import { useNavigate, useLocation } from "react-router-dom";
 import sideBarData from "./sideBarData";
 import selected from '../assets/images/selected.svg'
 
+
 function SideBar() {
   let location = useLocation();
   let navigate = useNavigate();
+  const [tag, setTag] = useState('/')
   console.log(location.pathname);
+  useEffect(() => {
+
+    sideBarData.forEach((elem, i) => {
+      if (elem.name !== 'DashBoard') {
+        if (location.pathname.includes(elem.path))
+          setTag(elem.path)
+      }
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
   return (
     <div className="sideBar ">
       <div>
@@ -18,25 +30,28 @@ function SideBar() {
           <div
             key={i}
             className={
-              location.pathname === elem.path
+              tag === elem.path
                 ? "active pad10 row spaceBetween pointer h20 padl20 white"
                 : "pad10 row spaceBetween pointer h20 padl20 gray "
             }
-            onClick={() => navigate(elem.path)}
+            onClick={() => {
+              navigate(elem.path)
+              setTag(elem.path)
+            }}
           >
-            
-              <div className="cCenter">
-                <img
-                  src={elem.image}
-                  alt={elem.name}
-                  className='icon'
-                  style={{ filter:location.pathname === elem.path? 'brightness(200%)':'' }}
-                />
-                <p className="mar10 fzs fwb">{elem.name}</p>
-              </div>
-              <div>
-                {location.pathname===elem.path&&<img src={selected} alt="" />}
-              </div>
+
+            <div className="cCenter">
+              <img
+                src={elem.image}
+                alt={elem.name}
+                className='icon'
+                style={{ filter: location.pathname === elem.path ? 'brightness(200%)' : '' }}
+              />
+              <p className="mar10 fzs fwb">{elem.name}</p>
+            </div>
+            <div>
+              {location.pathname === elem.path && <img src={selected} alt="" />}
+            </div>
           </div>
         ))}
       </div>

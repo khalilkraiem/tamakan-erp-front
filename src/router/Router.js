@@ -12,16 +12,21 @@ import Remainders from "../pages/Remainders"
 import Reports from "../pages/Reports"
 import Settings from "../pages/Settings"
 import Archive from "../pages/Archive";
+import CustomerList from "../views/Customer/CustomerList";
+import OneCustomer from "../views/Customer/OneCustomer";
 
 
 function Router() {
-  
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<Main />}>
-          <Route index element={<Dashboard />} />    
-          <Route path="customer" element={<Customer />} />
+          <Route index element={<Dashboard />} />
+          <Route path="customer" element={<Customer />} >
+            <Route index element={<CustomerList/>}/>
+            <Route path="oneCustomer" element={<OneCustomer />}/>
+          </Route>
           <Route path="purchases" element={<Purchases />} />
           <Route path="archive" element={<Archive />} />
           <Route path="organizing" element={<Organizing />} />
@@ -31,7 +36,7 @@ function Router() {
           <Route path="reports" element={<Reports />} />
           <Route path="settings" element={<Settings />} />
         </Route>
-      
+
       </Routes>
     </BrowserRouter>
   );

@@ -29,6 +29,19 @@
 .padl50 {
   padding-left: 50px;
 }
+/* padding-right */
+.padr10 {
+  padding-right: 10px;
+}
+.padr20 {
+  padding-right: 20px;
+}
+.padr30 {
+  padding-right: 30px;
+}
+.padr50 {
+  padding-right: 50px;
+}
 /* margin */
 .mar5 {
   margin: 5px;
@@ -49,10 +62,71 @@
 .mart5{
   margin-top: 5px;
 }
+.mart10{
+  margin-top: 10px;
+}
+.mart20{
+  margin-top: 20px;
+}
+.mart30{
+  margin-top: 30px;
+}
+.mart50{
+  margin-top: 50px;
+}
+.mart100{
+  margin-top: 100px;
+}
 /* margin-bottom */
 .marb5{
   margin-bottom: 5px;
 }
+.marb10{
+  margin-bottom: 10px;
+}
+.marb20{
+  margin-bottom: 20px;
+}
+.marb30{
+  margin-bottom: 30px;
+}
+.marb50{
+  margin-bottom: 50px;
+}
+/* margin-left */
+.marl5{
+  margin-left: 5px;
+}
+.marl10{
+  margin-left: 10px;
+}
+.marl20{
+  margin-left: 20px;
+}
+.marl30{
+  margin-left: 30px;
+}
+.marl50{
+  margin-left: 50px;
+}
+/* margin-right */
+.marr5{
+  margin-right: 5px;
+}
+.marr10{
+  margin-right: 10px;
+}
+.marr20{
+  margin-right: 20px;
+}
+.marr30{
+  margin-right: 30px;
+}
+.marr50{
+  margin-right: 50px;
+}
+
+/* align & justify  */
 .textCenter {
   text-align: center;
 }
