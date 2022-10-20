@@ -5,19 +5,32 @@
   width: 100%;
   z-index: 1;
 }
+
 .HeaderContainer {
   margin-left: 181px;
   height: 100%;
 }
+
 .headerSearch::-webkit-input-placeholder {
   font-family: Cairo;
   opacity: 0.5;
-  font-weight:600;
+  font-weight: 600;
 }
+
 .headerUserPhoto {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+.headerProfile {
+  position: absolute;
+  background-color: white;
+  box-shadow: -1px 0px 3px 0px #aaaaaa49  ;
+  width: 300px;
+  right: 0px;
+  top:70px
+}
+
 .sideBar {
   position: fixed;
   width: 181px;
@@ -27,11 +40,13 @@
   border-right: 1px solid rgba(192, 192, 192, 0.447);
   z-index: 1;
 }
-.SideBarContainer{
-    margin-top: 30px;
+
+.SideBarContainer {
+  margin-top: 30px;
 }
+
 .SideBarContainer .active {
-    border-radius: 0px 20px 20px 0;
-    background: linear-gradient(to right, #0D988C,#1E6EB7);
-    margin-right: 10px;
+  border-radius: 0px 20px 20px 0;
+  background: linear-gradient(to right, #0D988C, #1E6EB7);
+  margin-right: 10px;
 }

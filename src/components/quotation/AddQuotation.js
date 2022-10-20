@@ -39,8 +39,8 @@ function AddQuotation({ setAddQuotationIsOpen }) {
                         </div>
                     </div>
                 </div>
-                <div className=' w700' >
-                    <div className='mar50'>
+                <div className='w700' >
+                    <div className='mar50 '>
                         <TextEditor />
                     </div>
                     <div className='bgLightGray br10 '>
