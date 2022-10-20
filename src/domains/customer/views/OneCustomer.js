@@ -1,13 +1,13 @@
 import React,{useState} from 'react'
 import Modal from "react-modal";
 
-import QuotationTable from '../../components/QuotationTable'
+import QuotationTable from '../../../components/quotation/QuotationTable'
+import AddQuotation from '../../../components/quotation/AddQuotation';
+import ContactTable from '../../../components/contract/ContactTable'
+import AddContract from '../../../components/contract/AddContract';
 
-import InputText from '../../components/InputText'
-import LightButton from '../../components/LightButton'
-import ContactTable from '../../components/ContactTable'
-import AddContract from '../../components/AddContract';
-import AddQuotation from '../../components/AddQuotation';
+import InputText from '../../../components/inputs/InputText'
+import LightButton from '../../../components/buttons/LightButton'
 
 const customStyles = {
   content: {

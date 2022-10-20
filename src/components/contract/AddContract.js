@@ -1,6 +1,6 @@
 import React from 'react'
-import BlueButton from './BlueButton'
-import InputText from './InputText';
+import BlueButton from '../buttons/BlueButton'
+import InputText from '../inputs/InputText';
 
 function AddContract({ setAddContractIsOpen }) {
     return (

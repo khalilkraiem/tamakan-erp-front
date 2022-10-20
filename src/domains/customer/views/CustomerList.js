@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import Modal from "react-modal";
 
-import Table from '../../components/CustomerTable'
-import AddCustomer from '../../components/AddCustomer';
-import DeleteCustomer from '../../components/DeleteCustomer';
+import Table from '../components/CustomerTable'
+import AddCustomer from '../components/AddCustomer';
+import DeleteCustomer from '../components/DeleteCustomer';
 
-import LightButton from '../../components/LightButton'
-import SelectSmall from '../../components/Select'
+import LightButton from '../../../components/buttons/LightButton'
+import SelectSmall from '../../../components/Select'
 
 
 const customStyles = {

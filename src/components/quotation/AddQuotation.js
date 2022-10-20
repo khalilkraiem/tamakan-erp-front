@@ -1,13 +1,13 @@
 import React from 'react'
 
-import BlueButton from './BlueButton'
-import InputText from './InputText'
-import trash from '../assets/images/delete.svg'
+import BlueButton from '../buttons/BlueButton'
+import InputText from '../inputs/InputText'
+import TextEditor from '../inputs/TextEditor'
+import trash from '../../assets/images/delete.svg'
 
 
 
-import data from '../constants/addQuotationsData'
-import TextEditor from './TextEditor'
+import data from '../../constants/addQuotationsData'
 
 function AddQuotation({ setAddQuotationIsOpen }) {
     

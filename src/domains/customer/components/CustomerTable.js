@@ -1,11 +1,11 @@
 import React from 'react'
-import data from '../constants/customersData'
-import eye from '../assets/images/eye.svg'
-import trash from '../assets/images/delete.svg'
-import edit from '../assets/images/edit.svg'
-import up from '../assets/images/up.svg'
-import down from '../assets/images/down.svg'
-import LightButton from './LightButton'
+import data from '../../../constants/customersData'
+import eye from '../../../assets/images/eye.svg'
+import trash from '../../../assets/images/delete.svg'
+import edit from '../../../assets/images/edit.svg'
+import up from '../../../assets/images/up.svg'
+import down from '../../../assets/images/down.svg'
+import LightButton from '../../../components/buttons/LightButton'
 import { useNavigate } from 'react-router-dom'
 function CustomerTable({setDeleteCustomerIsOpen}) {
     let navigate=useNavigate()

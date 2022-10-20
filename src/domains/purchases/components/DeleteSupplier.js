@@ -1,7 +1,7 @@
 import React from 'react'
-import BlueButton from './BlueButton'
+import BlueButton from '../../../components/buttons/BlueButton'
 
-function DeleteCustomer({setDeleteCustomerIsOpen}) {
+function DeleteSupplier({setDeleteSupplierIsOpen}) {
     return (
         <div className='h200 w300 wrap cCenter'>
             <div className=''>
@@ -10,7 +10,7 @@ function DeleteCustomer({setDeleteCustomerIsOpen}) {
                 </div>
                 <div className='cCenter'>
                     <div className='mar20'>
-                        <BlueButton content='No' fn={()=>setDeleteCustomerIsOpen(false)} />
+                        <BlueButton content='No' fn={()=>setDeleteSupplierIsOpen(false)} />
                     </div>
                     <div className='mar20'>
                         <BlueButton content='Yes' />
@@ -22,4 +22,4 @@ function DeleteCustomer({setDeleteCustomerIsOpen}) {
     )
 }
 
-export default DeleteCustomer
+export default DeleteSupplier

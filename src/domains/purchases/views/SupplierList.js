@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import Modal from "react-modal";
 
-import SupplierTable from '../../components/SupplierTable'
-import AddCustomer from '../../components/AddCustomer';
-import DeleteCustomer from '../../components/DeleteCustomer';
+import SupplierTable from '../components/SupplierTable'
+import AddSupplier from '../components/AddSupplier';
+import DeleteSupplier from '../components/DeleteSupplier';
 
-import LightButton from '../../components/LightButton'
-import SelectSmall from '../../components/Select'
+import LightButton from '../../../components/buttons/LightButton'
+import SelectSmall from '../../../components/Select'
 
 
 const customStyles = {
@@ -25,8 +25,8 @@ const customStyles = {
 Modal.setAppElement("#root");
 
 function SupplierList() {
-    const [addCustomerIsOpen, setAddCustomerIsOpen] = useState(false);
-    const [deleteCustomerIsOpen, setDeleteCustomerIsOpen] = useState(false);
+    const [addSupplierIsOpen, setAddSupplierIsOpen] = useState(false);
+    const [deleteSupplierIsOpen, setDeleteSupplierIsOpen] = useState(false);
     return (
         <div>
             <div className='right h70'>
@@ -42,28 +42,28 @@ function SupplierList() {
                         </div>
                     </div>
                     <div className='Center h-100'>
-                        <LightButton content='+ Add' ws={5} fn={() => setAddCustomerIsOpen(true)} />
+                        <LightButton content='+ Add' ws={5} fn={() => setAddSupplierIsOpen(true)} />
                     </div>
                 </div>
             </div>
-            <SupplierTable setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
+            <SupplierTable setDeleteSupplierIsOpen={setDeleteSupplierIsOpen} />
             <Modal
-                isOpen={addCustomerIsOpen}
-                onRequestClose={() => setAddCustomerIsOpen(false)}
+                isOpen={addSupplierIsOpen}
+                onRequestClose={() => setAddSupplierIsOpen(false)}
                 style={customStyles}
                 backgroundColor={'gray'}
-                contentLabel="Add Customer Modal"
+                contentLabel="Add Supplier Modal"
             >
-                <AddCustomer setAddCustomerIsOpen={setAddCustomerIsOpen} />
+                <AddSupplier setAddSupplierIsOpen={setAddSupplierIsOpen} />
             </Modal>
             <Modal
-                isOpen={deleteCustomerIsOpen}
-                onRequestClose={() => setDeleteCustomerIsOpen(false)}
+                isOpen={deleteSupplierIsOpen}
+                onRequestClose={() => setDeleteSupplierIsOpen(false)}
                 style={customStyles}
                 backgroundColor={'gray'}
-                contentLabel="Delete Customer Modal"
+                contentLabel="Delete Supplier Modal"
             >
-                <DeleteCustomer setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
+                <DeleteSupplier setDeleteSupplierIsOpen={setDeleteSupplierIsOpen} />
             </Modal>
 
         </div>
