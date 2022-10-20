@@ -21,7 +21,9 @@ function Router() {
       <Routes>
         <Route path="*" element={<Main />}>
           <Route index element={<Dashboard />} />    
-          <Route path="customer" element={<Customer />} />
+          <Route path="customer" element={<Customer />} >
+            
+          </Route>
           <Route path="purchases" element={<Purchases />} />
           <Route path="archive" element={<Archive />} />
           <Route path="organizing" element={<Organizing />} />
