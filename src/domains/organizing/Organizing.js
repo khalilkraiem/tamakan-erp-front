@@ -1,10 +1,15 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 function Organizing() {
   return (
     <div className='page'>
-    <div><h2>Organizing</h2></div>
+    <div className='padl50'>
+      <p className='fwb fzxl'>Organizing</p>
+    </div>
+    <Outlet />
   </div>
+
   )
 }
 

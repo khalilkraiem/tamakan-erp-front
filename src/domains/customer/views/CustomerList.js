@@ -37,7 +37,7 @@ function CustomerList() {
                         </div>
                         <div className='row h-100 Center mar10 gray'>
                             <p>Show</p>
-                            <SelectSmall label='number' className='w70 h40' value={10} data={[10, 20]} />
+                            <SelectSmall label='Num' className='w70 h40' value={10} data={[10, 20]} />
                             <p>Entries</p>
                         </div>
                     </div>

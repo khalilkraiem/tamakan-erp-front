@@ -32,6 +32,11 @@ var sideBareData = [
     name: "Organizing",
     path: "/organizing",
     image: organizing,
+    children:[
+      {name:'Metting',path:'/organizing'},
+      {name:'Conference',path:"/organizing/conference"},
+      {name:'Vehicle',path:"/organizing/vehicle"}
+    ]
   },
   {
     name: "Request And Tasks",

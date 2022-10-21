@@ -28,7 +28,8 @@
   box-shadow: -1px 0px 3px 0px #aaaaaa49  ;
   width: 300px;
   right: 0px;
-  top:70px
+  top:70px;
+  /* z-index: 1; */
 }
 
 .sideBar {
