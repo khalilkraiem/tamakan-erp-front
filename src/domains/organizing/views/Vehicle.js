@@ -7,6 +7,8 @@ import LightButton from '../../../components/buttons/LightButton'
 import SelectSmall from '../../../components/Select'
 import AddVehicle from '../components/AddVehicle';
 import DeleteVehicle from '../components/DeleteVehicle';
+import OneVehicle from '../components/OneVehicle';
+import EditVehicle from '../components/EditVehicle';
 
 
 const customStyles = {
@@ -28,6 +30,7 @@ function Vehicle() {
     const [deleteVehicleIsOpen, setDeleteVehicleIsOpen] = useState(false)
     const [viewVehicleIsOpen, setViewVehicleIsOpen] = useState(false)
     const [addVehicleIsOpen, setAddVehicleIsOpen] = useState(false)
+    const [editVehicleIsOpen, setEditVehicleIsOpen] = useState(false)
     return (
 
         <div>
@@ -48,7 +51,7 @@ function Vehicle() {
                     </div>
                 </div>
             </div>
-            <VehicleTable setDeleteVehicleIsOpen={setDeleteVehicleIsOpen} setViewVehiculeIsOpen={setViewVehicleIsOpen} />
+            <VehicleTable setDeleteVehicleIsOpen={setDeleteVehicleIsOpen} setViewVehicleIsOpen={setViewVehicleIsOpen} setEditVehicleIsOpen={setEditVehicleIsOpen} />
             <Modal
                 isOpen={addVehicleIsOpen}
                 onRequestClose={() => setAddVehicleIsOpen(false)}
@@ -66,15 +69,26 @@ function Vehicle() {
                 contentLabel="Delete Vehicle Modal"
             >
                 <DeleteVehicle setDeleteVehicleIsOpen={setDeleteVehicleIsOpen} />
+                
             </Modal>
             <Modal
                 isOpen={viewVehicleIsOpen}
                 onRequestClose={() => setViewVehicleIsOpen(false)}
                 style={customStyles}
                 backgroundColor={'gray'}
-                contentLabel="Delete Vehicle Modal"
+                contentLabel="View Vehicle Modal"
             >
-                <DeleteVehicle setViewVehicleIsOpen={setViewVehicleIsOpen} />
+                <OneVehicle setViewVehicleIsOpen={setViewVehicleIsOpen} />
+            </Modal>
+            {/* modal edit */}
+            <Modal
+                isOpen={editVehicleIsOpen}
+                onRequestClose={() => setEditVehicleIsOpen(false)}
+                style={customStyles}
+                backgroundColor={'gray'}
+                contentLabel="Edit Vehicle Modal"
+            >
+                <EditVehicle setEditVehicleIsOpen={setEditVehicleIsOpen} />
             </Modal>
 
         </div>

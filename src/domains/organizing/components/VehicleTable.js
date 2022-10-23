@@ -7,7 +7,7 @@ import up from '../../../assets/images/up.svg'
 import down from '../../../assets/images/down.svg'
 import LightButton from '../../../components/buttons/LightButton'
 
-function VehicleTable({setDeleteVehicleIsOpen,setViewVehiculeIsOpen}) {
+function VehicleTable({setViewVehicleIsOpen,setEditVehicleIsOpen,setDeleteVehicleIsOpen}) {
     
     return (
         <div className='bgLightGray pad30 '>
@@ -49,12 +49,12 @@ function VehicleTable({setDeleteVehicleIsOpen,setViewVehiculeIsOpen}) {
                         </div>
                         <div className='w100 cCenter mar20'>
 
-                            <div className='h20 w20 br5 bgLightOrange cCenter mar5 pointer' onClick={()=>setViewVehiculeIsOpen(true)}>
+                            <div className='h20 w20 br5 bgLightOrange cCenter mar5 pointer' onClick={()=>setViewVehicleIsOpen(true)}>
                                 <img alt='eye' src={eye} className='' />
                             </div>
 
 
-                            <div className='h20 w20 br5 bgLightBlue cCenter  pointer' >
+                            <div className='h20 w20 br5 bgLightBlue cCenter  pointer' onClick={()=>setEditVehicleIsOpen(true)}>
                                 <img alt='edit' src={edit} className='' />
                             </div>
 

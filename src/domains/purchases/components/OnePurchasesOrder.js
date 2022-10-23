@@ -1,7 +1,8 @@
 import React from 'react'
 import InputText from '../../../components/inputs/InputText'
-import { BsFileEarmarkArrowDown } from 'react-icons/bs'
+
 import BlueButton from '../../../components/buttons/BlueButton'
+import DowloadFile from '../../../components/DowloadFile'
 function OnePurchasesOrder({ setViewOrderIsOpen }) {
     return (
         <div className='br20 modal bgWhite' >
@@ -21,14 +22,7 @@ function OnePurchasesOrder({ setViewOrderIsOpen }) {
                 <div className=''>
                     <InputText label='Item' />
                     <InputText label='Departement' />
-                    <div className='cCenter w250 h100 mart20 pointer'>
-                        <div>
-                            <div className='cCenter'>
-                                <BsFileEarmarkArrowDown size={30} />
-                            </div>
-                            Download
-                        </div>
-                    </div>
+                    <DowloadFile />
                 </div>
             </div>
             <div className='cCenter mar20'>
