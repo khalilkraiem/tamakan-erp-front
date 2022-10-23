@@ -1,6 +1,6 @@
 import React from 'react'
-import BlueButton from './BlueButton'
-import SelectSmall from './Select'
+import BlueButton from '../../../components/buttons/BlueButton'
+import SelectSmall from '../../../components/Select'
 
 function AddCustomer({setAddCustomerIsOpen}) {
     return (

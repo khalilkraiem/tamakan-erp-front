@@ -13,5 +13,12 @@
     font-family: Cairo;
 }
 .ReactModal__Overlay {
+    z-index: 1 !important;
     background-color: rgba(117, 117, 117, 0.719) !important;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+    z-index: 0 !important;
+}
+.checkBoxGreen {
+    filter: hue-rotate(240deg)
 }
