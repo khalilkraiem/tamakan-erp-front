@@ -37,7 +37,7 @@ function Header() {
               {!open ? <AiOutlineDown color="gray" className="op05" size={10} /> :
                 <AiOutlineUp color="gray" className="op05" size={10} />}
             </div>
-            {!open&&<div className="headerProfile pad20">
+            {open&&<div className="headerProfile pad20">
               <div><p className="fwb">hi Riadh</p></div>
               <div><p className="fwb gray">User Profile</p></div>
               <div>

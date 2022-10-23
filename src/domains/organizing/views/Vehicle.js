@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import Modal from "react-modal";
 
-import Table from '../components/CustomerTable'
-import AddCustomer from '../components/AddCustomer';
-import DeleteCustomer from '../components/DeleteCustomer';
+import VehicleTable from '../components/VehicleTable'
 
 import LightButton from '../../../components/buttons/LightButton'
 import SelectSmall from '../../../components/Select'
@@ -24,50 +22,52 @@ const customStyles = {
 
 Modal.setAppElement("#root");
 
-function CustomerList() {
-    const [addCustomerIsOpen, setAddCustomerIsOpen] = useState(false);
-    const [deleteCustomerIsOpen, setDeleteCustomerIsOpen] = useState(false);
+function Vehicle() {
+    const [deleteVehicleIsOpen, setDeleteVehicleIsOpen] = useState(false)
+    const [viewVehiculeOpen, setViewVehiculeOpen] = useState(false)
+    const [addSupplierIsOpen, setAddSupplierIsOpen] = useState(false)
     return (
+
         <div>
             <div className='right h70'>
                 <div className='spaceBetween w500 mar30'>
                     <div className='Center spaceBetween h-100 w300'>
                         <div className=' Center h-30 mar10'>
-                            <SelectSmall label='Filter' className='w100 h40' data={['option1','option2']}  />
+                            <SelectSmall label='Filter' className='w100 h40' data={['option1', 'option2']} />
                         </div>
                         <div className='row h-100 Center mar10 gray'>
                             <p>Show</p>
-                            <SelectSmall label='Num' className='w70 h40' value={10} data={[10, 20]} />
+                            <SelectSmall label='number' className='w70 h40' value={10} data={[10, 20]} />
                             <p>Entries</p>
                         </div>
                     </div>
                     <div className='Center h-100'>
-                        <LightButton content='+ Add' ws={5} fn={() => setAddCustomerIsOpen(true)} />
+                        <LightButton content='+ Add' ws={5} fn={() => setAddSupplierIsOpen(true)} />
                     </div>
                 </div>
             </div>
-            <Table setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
-            <Modal
-                isOpen={addCustomerIsOpen}
-                onRequestClose={() => setAddCustomerIsOpen(false)}
+            <VehicleTable setDeleteVehicleIsOpen={setDeleteVehicleIsOpen} setViewVehiculeOpen={setViewVehiculeOpen} />
+            {/* <Modal
+                isOpen={addSupplierIsOpen}
+                onRequestClose={() => setAddSupplierIsOpen(false)}
                 style={customStyles}
                 backgroundColor={'gray'}
-                contentLabel="Add Customer Modal"
+                contentLabel="Add Supplier Modal"
             >
-                <AddCustomer setAddCustomerIsOpen={setAddCustomerIsOpen} />
+                <AddSupplier setAddSupplierIsOpen={setAddSupplierIsOpen} />
             </Modal>
             <Modal
-                isOpen={deleteCustomerIsOpen}
-                onRequestClose={() => setDeleteCustomerIsOpen(false)}
+                isOpen={deleteSupplierIsOpen}
+                onRequestClose={() => setDeleteSupplierIsOpen(false)}
                 style={customStyles}
                 backgroundColor={'gray'}
-                contentLabel="Delete Customer Modal"
+                contentLabel="Delete Supplier Modal"
             >
-                <DeleteCustomer setDeleteCustomerIsOpen={setDeleteCustomerIsOpen} />
-            </Modal>
+                <DeleteSupplier setDeleteSupplierIsOpen={setDeleteSupplierIsOpen} />
+            </Modal> */}
 
         </div>
     )
 }
 
-export default CustomerList
+export default Vehicle

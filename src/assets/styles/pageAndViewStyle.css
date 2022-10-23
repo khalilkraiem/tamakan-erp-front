@@ -9,6 +9,7 @@
 .line:hover{
     background-color: #2F81A522
 }
+/* Modal */
 .modal {
     font-family: Cairo;
 }
@@ -16,9 +17,14 @@
     z-index: 1 !important;
     background-color: rgba(117, 117, 117, 0.719) !important;
 }
+/* Select MUI*/
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
     z-index: 0 !important;
 }
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+    z-index: 0 !important;
+}
+/* CheckBox */
 .checkBoxGreen {
     filter: hue-rotate(240deg)
 }
