@@ -6,8 +6,8 @@ import edit from '../../../assets/images/edit.svg'
 import up from '../../../assets/images/up.svg'
 import down from '../../../assets/images/down.svg'
 import LightButton from '../../../components/buttons/LightButton'
-import { useNavigate } from 'react-router-dom'
-function VehicleTable({setDeleteVehicleIsOpen,setViewVehiculeOpen}) {
+
+function VehicleTable({setDeleteVehicleIsOpen,setViewVehiculeIsOpen}) {
     
     return (
         <div className='bgLightGray pad30 '>
@@ -49,7 +49,7 @@ function VehicleTable({setDeleteVehicleIsOpen,setViewVehiculeOpen}) {
                         </div>
                         <div className='w100 cCenter mar20'>
 
-                            <div className='h20 w20 br5 bgLightOrange cCenter mar5 pointer' onClick={()=>setViewVehiculeOpen(true)}>
+                            <div className='h20 w20 br5 bgLightOrange cCenter mar5 pointer' onClick={()=>setViewVehiculeIsOpen(true)}>
                                 <img alt='eye' src={eye} className='' />
                             </div>
 

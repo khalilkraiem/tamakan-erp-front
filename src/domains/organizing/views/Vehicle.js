@@ -5,6 +5,8 @@ import VehicleTable from '../components/VehicleTable'
 
 import LightButton from '../../../components/buttons/LightButton'
 import SelectSmall from '../../../components/Select'
+import AddVehicle from '../components/AddVehicle';
+import DeleteVehicle from '../components/DeleteVehicle';
 
 
 const customStyles = {
@@ -24,8 +26,8 @@ Modal.setAppElement("#root");
 
 function Vehicle() {
     const [deleteVehicleIsOpen, setDeleteVehicleIsOpen] = useState(false)
-    const [viewVehiculeOpen, setViewVehiculeOpen] = useState(false)
-    const [addSupplierIsOpen, setAddSupplierIsOpen] = useState(false)
+    const [viewVehicleIsOpen, setViewVehicleIsOpen] = useState(false)
+    const [addVehicleIsOpen, setAddVehicleIsOpen] = useState(false)
     return (
 
         <div>
@@ -42,29 +44,38 @@ function Vehicle() {
                         </div>
                     </div>
                     <div className='Center h-100'>
-                        <LightButton content='+ Add' ws={5} fn={() => setAddSupplierIsOpen(true)} />
+                        <LightButton content='+ Add' ws={5} fn={() => setAddVehicleIsOpen(true)} />
                     </div>
                 </div>
             </div>
-            <VehicleTable setDeleteVehicleIsOpen={setDeleteVehicleIsOpen} setViewVehiculeOpen={setViewVehiculeOpen} />
-            {/* <Modal
-                isOpen={addSupplierIsOpen}
-                onRequestClose={() => setAddSupplierIsOpen(false)}
+            <VehicleTable setDeleteVehicleIsOpen={setDeleteVehicleIsOpen} setViewVehiculeIsOpen={setViewVehicleIsOpen} />
+            <Modal
+                isOpen={addVehicleIsOpen}
+                onRequestClose={() => setAddVehicleIsOpen(false)}
                 style={customStyles}
                 backgroundColor={'gray'}
-                contentLabel="Add Supplier Modal"
+                contentLabel="Add Vehicle Modal"
             >
-                <AddSupplier setAddSupplierIsOpen={setAddSupplierIsOpen} />
+                <AddVehicle setAddVehicleIsOpen={setAddVehicleIsOpen} />
             </Modal>
             <Modal
-                isOpen={deleteSupplierIsOpen}
-                onRequestClose={() => setDeleteSupplierIsOpen(false)}
+                isOpen={deleteVehicleIsOpen}
+                onRequestClose={() => setDeleteVehicleIsOpen(false)}
                 style={customStyles}
                 backgroundColor={'gray'}
-                contentLabel="Delete Supplier Modal"
+                contentLabel="Delete Vehicle Modal"
             >
-                <DeleteSupplier setDeleteSupplierIsOpen={setDeleteSupplierIsOpen} />
-            </Modal> */}
+                <DeleteVehicle setDeleteVehicleIsOpen={setDeleteVehicleIsOpen} />
+            </Modal>
+            <Modal
+                isOpen={viewVehicleIsOpen}
+                onRequestClose={() => setViewVehicleIsOpen(false)}
+                style={customStyles}
+                backgroundColor={'gray'}
+                contentLabel="Delete Vehicle Modal"
+            >
+                <DeleteVehicle setViewVehicleIsOpen={setViewVehicleIsOpen} />
+            </Modal>
 
         </div>
     )
