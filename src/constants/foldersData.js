@@ -1,0 +1,17 @@
+module.exports=[
+    {
+        folderName:'Supplier',
+        user:'me',
+        lastModifiedDate:'21/01/2022'
+    },
+    {
+        folderName:'Client',
+        user:'me',
+        lastModifiedDate:'21/01/2022'
+    },
+    {
+        folderName:'Departement',
+        user:'me',
+        lastModifiedDate:'21/01/2022'
+    },
+]

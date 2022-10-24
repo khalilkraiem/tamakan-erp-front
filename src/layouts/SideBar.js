@@ -34,9 +34,9 @@ function SideBar() {
       </div>
       <div className="SideBarContainer">
         {sideBarData.map((elem, i) => (
-          <div>
+          <div key={i}>
             <div
-              key={i}
+              
               className={
                 tag === elem.path
                   ? "active pad10 row spaceBetween pointer h20 padl20 white"
@@ -63,7 +63,7 @@ function SideBar() {
               </div>
             </div>
             {elem.children && tag === elem.path && elem.children.map((el, i) => (
-              <div className="padl20 fzs pointer" onClick={() => {
+              <div key={i} className="padl20 fzs pointer" onClick={() => {
                 navigate(el.path)
                 setSubTag(el.path)
 
