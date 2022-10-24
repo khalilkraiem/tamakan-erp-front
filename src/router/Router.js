@@ -15,11 +15,15 @@ import Metting from "../domains/organizing/views/Metting";
 import Conference from "../domains/organizing/views/Conference"
 import Vehicle from "../domains/organizing/views/Vehicle";
 import RequestsAndTasks from "../domains/requestAndTasks/RequestsAndTasks"
+import RequestList from "../domains/requestAndTasks/views/RequestList";
+import TasksList from "../domains/requestAndTasks/views/TasksList";
 import Interaction from "../domains/interaction/Interaction"
 import Remainders from "../domains/remainders/Remainders"
 import Reports from "../domains/reports/Reports"
 import Settings from "../domains/settings/Settings"
 import Archive from "../domains/archive/Archive";
+import Folders from "../domains/archive/views/Folders";
+import FolderSetting from "../domains/archive/views/FolderSetting";
 
 
 function Router() {
@@ -36,15 +40,21 @@ function Router() {
           <Route path="purchases" element={<Purchases />} >
             <Route index element={<SupplierList />} />
             <Route path="oneSupplier" element={<OneSupplier />} />
-            <Route path='order' element={<PurchsesOrder/>} />
+            <Route path='order' element={<PurchsesOrder />} />
           </Route>
           <Route path="organizing" element={<Organizing />} >
             <Route index element={<Metting />} />
-            <Route path='conference' element={<Conference />}  />
-            <Route path='vehicle' element={<Vehicle />}  />
+            <Route path='conference' element={<Conference />} />
+            <Route path='vehicle' element={<Vehicle />} />
           </Route>
-          <Route path="requestAndTasks" element={<RequestsAndTasks />} />
-          <Route path="archive" element={<Archive />} />
+          <Route path="requestAndTasks" element={<RequestsAndTasks />} >
+            <Route index element={<RequestList />} />
+            <Route path="tasks" element={<TasksList />} />
+          </Route>
+          <Route path="archive" element={<Archive />} >
+            <Route index element={<Folders />} />
+            <Route path="folderSetting" element={<FolderSetting />} />
+          </Route>
           <Route path="interaction" element={<Interaction />} />
           <Route path="remainders" element={<Remainders />} />
           <Route path="reports" element={<Reports />} />

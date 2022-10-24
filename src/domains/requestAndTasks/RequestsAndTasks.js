@@ -1,10 +1,14 @@
 import React from 'react'
+import {Outlet} from 'react-router-dom'
 
 function RequestsAndTasks() {
   return (
     <div className='page'>
-      <div><h2>Requests And Tasks</h2></div>
+    <div className='padl50'>
+      <p className='fwb fzxl'>Requests and Tasks</p>
     </div>
+    <Outlet />
+  </div>
   )
 }
 

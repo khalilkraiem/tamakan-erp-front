@@ -42,11 +42,19 @@ var sideBareData = [
     name: "Request And Tasks",
     path: "/requestAndTasks",
     image: requestAndTasks,
+    children:[
+      {name:'Requests',path:'/requestAndTasks'},
+      {name:'Tasks',path:"/requestAndTasks/tasks"},
+    ]
   },
   {
     name: "Archive",
     path: "/archive",
     image: archive,
+    children:[
+      {name:'Folders',path:'/archive'},
+      {name:'Folder setting',path:"/archive/folderSetting"},
+    ]
   },
   {
     name: "Interaction",
