@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Modal from "react-modal";
+import PurchasesOrderTable from "../components/PurchachesOrderTable";
 
+import Modal from "react-modal";
+import OnePurchasesOrder from "../components/OnePurchasesOrder";
+import EditPurchasesOrder from "../components/EditPurchasesOrder";
 import SelectSmall from "../../../components/Select";
 import LightButton from "../../../components/buttons/LightButton";
-import RequestTable from "../components/RequestTable";
-import AddRequest from "../components/AddRequest";
 
 const customStyles = {
   content: {
@@ -21,12 +22,13 @@ const customStyles = {
 
 Modal.setAppElement("#root");
 
-function RequestList() {
-  const [addRequestIsOpen, setAddRequestIsOpen] = useState(false);
+function PurchsesOrder() {
+  const [viewOrderIsOpen, setViewOrderIsOpen] = useState(false);
+  const [editOrderIsOpen, setEditOrderIsOpen] = useState(false);
   return (
     <div>
       <div className="padl50">
-        <p className="fwb fzxl">Requests</p>
+        <p className="fwb fzxl">Purchases Order</p>
       </div>
       <div className="right h70">
         <div className="spaceBetween w500 mar30">
@@ -41,7 +43,7 @@ function RequestList() {
             <div className="row h-100 Center mar10 gray">
               <p>Show</p>
               <SelectSmall
-                label="number"
+                label="Num"
                 className="w70 h40"
                 value={10}
                 data={[10, 20]}
@@ -50,26 +52,34 @@ function RequestList() {
             </div>
           </div>
           <div className="Center h-100">
-            <LightButton
-              content="+ Add"
-              ws={5}
-              fn={() => setAddRequestIsOpen(true)}
-            />
+            <LightButton content="+ Add" ws={5} />
           </div>
         </div>
       </div>
-      <RequestTable />
+      <PurchasesOrderTable
+        setViewOrderIsOpen={setViewOrderIsOpen}
+        setEditOrderIsOpen={setEditOrderIsOpen}
+      />
       <Modal
-        isOpen={addRequestIsOpen}
-        onRequestClose={() => setAddRequestIsOpen(false)}
+        isOpen={viewOrderIsOpen}
+        onRequestClose={() => setViewOrderIsOpen(false)}
         style={customStyles}
         backgroundColor={"gray"}
-        contentLabel="Add Request Modal"
+        contentLabel="View Order Modal"
       >
-        <AddRequest setAddRequestIsOpen={setAddRequestIsOpen} />
+        <OnePurchasesOrder setViewOrderIsOpen={setViewOrderIsOpen} />
+      </Modal>
+      <Modal
+        isOpen={editOrderIsOpen}
+        onRequestClose={() => setEditOrderIsOpen(false)}
+        style={customStyles}
+        backgroundColor={"gray"}
+        contentLabel="Delete Order Modal"
+      >
+        <EditPurchasesOrder setEditOrderIsOpen={setEditOrderIsOpen} />
       </Modal>
     </div>
   );
 }
 
-export default RequestList;
+export default PurchsesOrder;

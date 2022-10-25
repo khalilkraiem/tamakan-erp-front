@@ -1,9 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 function Settings() {
   return (
-    <div className='page'>
-      <div><h2>Settings</h2></div>
+    <div className=''>
+      <div className="padl50">
+        <p className="fwb fzxl">Settings</p>
+      </div>
+      <Outlet />
     </div>
   )
 }

@@ -25,6 +25,9 @@ function TasksList() {
     const [viewTaskIsOpen,setViewTaskIsOpen]=useState(false)
   return (
     <div>
+        <div className="padl50">
+        <p className="fwb fzxl">Tasks</p>
+      </div>
         <div className='right h70'>
                 <div className='spaceBetween w500 mar30'>
                     <div className='Center spaceBetween h-100 w300'>

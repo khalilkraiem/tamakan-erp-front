@@ -5,10 +5,8 @@ import { Outlet } from 'react-router-dom';
 function Customer() {
 
   return (
-    <div className='page'>
-      <div className='padl50'>
-        <p className='fwb fzxl'>Customer</p>
-      </div>
+    <div className=''>
+      
       <Outlet />
     </div>
   )

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 function DashBoard() {
   return (
-    <div className='page'>
-      <div><h2>Dashboard</h2></div>
+    <div className="">
+      <div className="padl50">
+        <p className="fwb fzxl">Dashboard</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default DashBoard
+export default DashBoard;

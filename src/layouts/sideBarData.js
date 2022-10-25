@@ -16,45 +16,45 @@ var sideBareData = [
   },
   {
     name: "Customer",
-    path:"/customer",
+    path: "/customer",
     image: customer,
   },
   {
     name: "Purchases",
     path: "/purchases",
     image: purchases,
-    children:[
-      {name:'Supplier',path:'/purchases'},
-      {name:'Puchases order',path:"/purchases/order"}
-    ]
+    children: [
+      { name: "Supplier", path: "/purchases" },
+      { name: "Puchases order", path: "/purchases/order" },
+    ],
   },
   {
     name: "Organizing",
     path: "/organizing",
     image: organizing,
-    children:[
-      {name:'Metting',path:'/organizing'},
-      {name:'Conference',path:"/organizing/conference"},
-      {name:'Vehicle',path:"/organizing/vehicle"}
-    ]
+    children: [
+      { name: "Metting", path: "/organizing" },
+      { name: "Conference", path: "/organizing/conference" },
+      { name: "Vehicle", path: "/organizing/vehicle" },
+    ],
   },
   {
     name: "Request And Tasks",
     path: "/requestAndTasks",
     image: requestAndTasks,
-    children:[
-      {name:'Requests',path:'/requestAndTasks'},
-      {name:'Tasks',path:"/requestAndTasks/tasks"},
-    ]
+    children: [
+      { name: "Requests", path: "/requestAndTasks" },
+      { name: "Tasks", path: "/requestAndTasks/tasks" },
+    ],
   },
   {
     name: "Archive",
     path: "/archive",
     image: archive,
-    children:[
-      {name:'Folders',path:'/archive'},
-      {name:'Folder setting',path:"/archive/folderSetting"},
-    ]
+    children: [
+      { name: "Folders", path: "/archive" },
+      { name: "Folder setting", path: "/archive/folderSetting" },
+    ],
   },
   {
     name: "Interaction",
@@ -74,7 +74,27 @@ var sideBareData = [
   {
     name: "Settings",
     path: "/settings",
-    image: settings
+    image: settings,
+    children: [
+      {
+        name: "Template",
+        path: "/settings",
+      },
+      {
+        name: "Admin setting",
+        path: "/settings/admin",
+        children: [
+          {
+            name: "User role",
+            path: "/settings/admin",
+          },
+          {
+            name: "Users",
+            path: "/settings/admin/users",
+          },
+        ],
+      },
+    ],
   },
 ];
 export default sideBareData;
