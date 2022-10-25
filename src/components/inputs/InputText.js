@@ -6,7 +6,7 @@ function InputText({label,fn,value,w,h}) {
             <p className='gray h10'>
                 {label}
             </p>
-            <input className='bgGray noBorder br10 w250 h40' onChange={fn} value={value} style={{width:w,height:h}} />
+            <input className='bgGray noBorder br10 w250 h30' onChange={fn} value={value} style={{width:w,height:h}} />
         </div>
     )
 }
