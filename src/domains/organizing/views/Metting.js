@@ -4,7 +4,6 @@ import Calendar from '../../../components/Calendar'
 function Metting() {
   return (
     <div>
-      hello
       <Calendar />
     </div>
   )
