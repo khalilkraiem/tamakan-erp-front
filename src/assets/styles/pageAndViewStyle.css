@@ -3,37 +3,61 @@
     margin-top: 80px;
     /* padding-top: 30px; */
 }
+
 .page {
     padding-top: 50px;
 }
-.line:hover{
+
+.line:hover {
     background-color: #2F81A522
 }
+
 /* Modal */
 .modal {
     font-family: Cairo;
 }
+
 .ReactModal__Overlay {
     z-index: 1 !important;
     background-color: rgba(117, 117, 117, 0.719) !important;
 }
+
 /* Select MUI*/
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
     z-index: 0 !important;
 }
+
 .css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
     z-index: 0 !important;
     top: -5px !important;
 }
-.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
     height: 30px;
 }
 
 /*datepicker*/
-.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
     height: 30px !important;
 }
+
 /* CheckBox */
 .checkBoxGreen {
     filter: hue-rotate(240deg)
+}
+
+/*chat Box*/
+.chatBox {
+    position: relative;
+}
+
+.sendZone::-webkit-input-placeholder {
+    font-family: Cairo;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.footerChatBox {
+    position: absolute;
+    bottom: 0px;
 }

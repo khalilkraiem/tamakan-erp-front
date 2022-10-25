@@ -20,7 +20,6 @@
     background-color: #FBE1C3;
 }
 .bgLightBlue{
-
     background-color:#D6EBF7
 }
 .bgLightRed{
@@ -46,4 +45,7 @@
 }
 .bgRed {
     background-color: red;
+}
+.bgHardRed {
+    background-color: #CE7676;
 }
