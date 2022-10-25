@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Send() {
+function SendEmail() {
   return (
     <div>Send</div>
   )
 }
 
-export default Send
+export default SendEmail

@@ -24,6 +24,10 @@ import Settings from "../domains/settings/Settings"
 import Archive from "../domains/archive/Archive";
 import Folders from "../domains/archive/views/Folders";
 import FolderSetting from "../domains/archive/views/FolderSetting";
+import IntercationsList from "../domains/interaction/view/IntercationsList";
+import SendEmail from "../domains/interaction/view/SendEmail";
+import ViewEmail from "../domains/interaction/view/ViewEmail";
+import ViewSms from "../domains/interaction/view/ViewSms";
 
 
 function Router() {
@@ -55,7 +59,13 @@ function Router() {
             <Route index element={<Folders />} />
             <Route path="folderSetting" element={<FolderSetting />} />
           </Route>
-          <Route path="interaction" element={<Interaction />} />
+          <Route path="interaction" element={<Interaction />} >
+            <Route index element={<IntercationsList/>} />
+            <Route path="sendEmail" element={<SendEmail/>} />
+            <Route path="viewSms" element={<ViewSms/>} />
+            <Route path="viewEmail" element={<ViewEmail/>} />
+          </Route>
+
           <Route path="remainders" element={<Remainders />} />
           <Route path="reports" element={<Reports />} />
           <Route path="settings" element={<Settings />} />
