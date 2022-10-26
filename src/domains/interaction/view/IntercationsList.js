@@ -18,7 +18,7 @@ function IntercationsList() {
         </div>
         <div className='row h-100 Center mar10 gray'>
           <p>Show</p>
-          <SelectSmall label='Num' className='w70 h40'  data={[10, 20]} />
+          <SelectSmall label='Num' className='w70 '  data={[10, 20]} />
           <p>Entries</p>
           <div className='cCenter h-100 w200'>
            {value!=='Chat'&& <LightButton content='+ New' ws={5} fn={()=>navigate('sendEmail')} />}
