@@ -26,7 +26,10 @@
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
     z-index: 0 !important;
 }
-
+.css-cktaik {
+    top: -5px !important;
+    z-index: 0 !important;
+}
 .css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
     z-index: 0 !important;
     top: -5px !important;
