@@ -74,6 +74,7 @@ function SideBar() {
                     onClick={() => {
                       navigate(ele.path);
                       setSubTag(ele.path);
+                      setMiniSubTag(ele.path)
                     }}
                   >
                     <p className={`${subTag === ele.path ? "fwb" : ""}`}>
