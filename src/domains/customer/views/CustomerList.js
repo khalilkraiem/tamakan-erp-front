@@ -37,7 +37,7 @@ function CustomerList() {
             <div className=" Center h-30 mar10">
               <SelectSmall
                 label="Filter"
-                className="w100 h40"
+                className="w100 h30"
                 data={["option1", "option2"]}
               />
             </div>

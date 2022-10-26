@@ -9,7 +9,7 @@ function AddCustomer({setAddCustomerIsOpen}) {
                 <div className='Center'>
                 <h2>Add Customer</h2>
                 </div>
-                <SelectSmall data={[1, 2]} label='Filter' className='w100 h40' />
+                <SelectSmall data={[1, 2]} label='Filter' className='w100 h30' />
             </div>
             <div className='spaceBetween'>
                 <div className=''>

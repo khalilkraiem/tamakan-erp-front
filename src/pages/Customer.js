@@ -36,11 +36,11 @@ function Customer() {
         <div className='spaceBetween w500 mar30'>
           <div className='Center spaceBetween h-100 w300'>
             <div className=' Center h-30 mar10'>
-              <SelectSmall label='filter' className='w100 h40' data={['option1','option2']} value='Filter' />
+              <SelectSmall label='filter' className='w100 h30' data={['option1','option2']} value='Filter' />
             </div>
             <div className='row h-100 Center mar10 gray'>
               <p>Show</p>
-              <SelectSmall label='num' className='w70 h40' value={10} data={[10,20]}/>
+              <SelectSmall label='num' className='w70 h30' value={10} data={[10,20]}/>
               <p>Entries</p>
             </div>
           </div>

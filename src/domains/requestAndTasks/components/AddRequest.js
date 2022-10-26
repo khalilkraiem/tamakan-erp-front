@@ -11,7 +11,7 @@ function AddRequest({ setAddRequestIsOpen }) {
         <div className="Center">
           <h2>Request</h2>
         </div>
-          <SelectSmall data={[1, 2]} label='Filter' className='w100 h40' />
+          <SelectSmall data={[1, 2]} label='Filter' className='w100 h30' />
       </div>
       <div className="">
         <InputText label="Item" />

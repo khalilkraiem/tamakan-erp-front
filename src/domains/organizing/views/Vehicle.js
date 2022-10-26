@@ -41,7 +41,7 @@ function Vehicle() {
             <div className=" Center h-30 mar10">
               <SelectSmall
                 label="Filter"
-                className="w100 h40"
+                className="w100 h30"
                 data={["option1", "option2"]}
               />
             </div>
@@ -49,7 +49,7 @@ function Vehicle() {
               <p>Show</p>
               <SelectSmall
                 label="number"
-                className="w70 h40"
+                className="w70 h30"
                 value={10}
                 data={[10, 20]}
               />

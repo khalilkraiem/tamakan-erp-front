@@ -21,7 +21,7 @@ function IntercationsList() {
           <SelectSmall label='Num' className='w70 h30'  data={[10, 20]} />
           <p>Entries</p>
           <div className='cCenter h-100 w200'>
-           {value!=='Chat'&& <LightButton content='+ New' ws={5} fn={()=>navigate('sendEmail')} />}
+           {value!=='Chat' && <LightButton content='+ New' ws={5} fn={()=>navigate('sendEmail')} />}
           </div>
         </div>
       </div>

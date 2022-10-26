@@ -14,11 +14,11 @@ function ViewSms() {
       <div className='mar20 br10 bgWhite column pad20'>
         <div className='Center h20'>
           <p className='gray w40 fwb'>To :</p>
-          <SelectSmall className="w400" data={[]} />
+          <SelectSmall className="w400 h30" data={[]} />
         </div>
         <div className='Center'>
           <p className='gray w40 fwb'>Title :</p>
-          <SelectSmall className="w400" data={[]} />
+          <SelectSmall className="w400 h30" data={[]} />
         </div>
         <textarea className='w-100 borderGray br10 h300' />
       </div>
