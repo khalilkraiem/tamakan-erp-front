@@ -28,7 +28,7 @@ import SendEmail from "../domains/interaction/view/SendEmail";
 import ViewEmail from "../domains/interaction/view/ViewEmail";
 import ViewSms from "../domains/interaction/view/ViewSms";
 
-import Remainders from "../domains/remainders/Remainders";
+import Reminders from "../domains/reminders/Reminders";
 
 import Reports from "../domains/reports/Reports";
 
@@ -76,7 +76,7 @@ function Router() {
             <Route path="viewSms" element={<ViewSms />} />
             <Route path="viewEmail" element={<ViewEmail />} />
           </Route>
-          <Route path="remainders" element={<Remainders />} />
+          <Route path="reminders" element={<Reminders />} />
           <Route path="reports" element={<Reports />} />
           <Route path="settings" element={<Settings />}>
             <Route index element={<Template />} />

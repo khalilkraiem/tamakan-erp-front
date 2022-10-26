@@ -4,7 +4,7 @@ import purchases from "../assets/images/purchases.svg";
 import organizing from "../assets/images/organizing.svg";
 import requestAndTasks from "../assets/images/requestsAndTasks.svg";
 import archive from "../assets/images/archive.png";
-import remainders from "../assets/images/remainders.png";
+import reminders from "../assets/images/remainders.png";
 import report from "../assets/images/report.png";
 import settings from "../assets/images/settings.svg";
 import interaction from "../assets/images/interaction.png";
@@ -62,9 +62,9 @@ var sideBareData = [
     image: interaction,
   },
   {
-    name: "Remainders",
-    path: "/remainders",
-    image: remainders,
+    name: "Reminders",
+    path: "/reminders",
+    image: reminders,
   },
   {
     name: "Reports",

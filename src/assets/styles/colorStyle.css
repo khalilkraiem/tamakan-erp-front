@@ -49,3 +49,6 @@
 .bgHardRed {
     background-color: #CE7676;
 }
+.bgBlueGreen {
+    background: linear-gradient( #0D988C, #1E6EB7);
+}
