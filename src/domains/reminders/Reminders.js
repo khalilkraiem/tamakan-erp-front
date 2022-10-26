@@ -5,6 +5,8 @@ import LightButton from '../../components/buttons/LightButton'
 import RemindersTable from './components/RemindersTable'
 import AddReminder from './components/AddReminder'
 import DeleteReminder from './components/DeleteReminder'
+import EditReminder from './components/EditReminder'
+import ViewReminder from './components/ViewReminder'
 
 const customStyles = {
   content: {
@@ -26,6 +28,8 @@ function Remainders() {
   const [num, setNum] = useState('')
   const [addReminderIsOpen,setAddReminderIsOpen]=useState(false)
   const [deleteReminderIsOpen,setDeleteReminderIsOpen]=useState(false)
+  const [editReminderIsOpen,setEditReminderIsOpen]=useState(false)
+  const [viewReminderIsOpen,setViewReminderIsOpen]=useState(false)
   return (
     <div className=''>
       <div className="padl50">
@@ -49,7 +53,7 @@ function Remainders() {
 
       </div>
 
-      <RemindersTable setAddReminderIsOpen={setAddReminderIsOpen} setDeleteReminderIsOpen={setDeleteReminderIsOpen}/>
+      <RemindersTable setViewReminderIsOpen={setViewReminderIsOpen} setDeleteReminderIsOpen={setDeleteReminderIsOpen} setEditReminderIsOpen={setEditReminderIsOpen} />
       <Modal
         isOpen={addReminderIsOpen}
         onRequestClose={() => setAddReminderIsOpen(false)}
@@ -58,6 +62,24 @@ function Remainders() {
         contentLabel="Add Reminder Modal"
       >
         <AddReminder setAddReminderIsOpen={setAddReminderIsOpen} />
+      </Modal>
+      <Modal
+        isOpen={viewReminderIsOpen}
+        onRequestClose={() => setViewReminderIsOpen(false)}
+        style={customStyles}
+        backgroundColor={"gray"}
+        contentLabel="View Reminder Modal"
+      >
+        <ViewReminder setViewReminderIsOpen={setViewReminderIsOpen} />
+      </Modal>
+      <Modal
+        isOpen={editReminderIsOpen}
+        onRequestClose={() => setEditReminderIsOpen(false)}
+        style={customStyles}
+        backgroundColor={"gray"}
+        contentLabel="Edit Reminder Modal"
+      >
+        <EditReminder setEditReminderIsOpen={setEditReminderIsOpen} />
       </Modal>
       <Modal
         isOpen={deleteReminderIsOpen}

@@ -1,13 +1,13 @@
 import React from 'react'
 
-import data from '../../../constants/remindersData'
+import data from '../../../constants/templatesData'
 import eye from '../../../assets/images/eye.svg'
 import trash from '../../../assets/images/delete.svg'
 import edit from '../../../assets/images/edit.svg'
 import up from '../../../assets/images/up.svg'
 import down from '../../../assets/images/down.svg'
 import LightButton from '../../../components/buttons/LightButton'
-function RemindersTable({setViewReminderIsOpen,setEditReminderIsOpen,setDeleteReminderIsOpen}) {
+function TemplateTable({setViewTemplateIsOpen,setDeleteTemplateIsOpen}) {
   return (
     <div className='bgLightGray pad30'>
       <div className='fzm'>
@@ -35,21 +35,21 @@ function RemindersTable({setViewReminderIsOpen,setEditReminderIsOpen,setDeleteRe
                     <div key={i} className={`spaceBetween h50 ${i % 2 === 1 ? "bgWhite" : "bgLightGray "} line`}>
                         <div className='row'>
                             <div className='w100 Center fzm mar20 '><p className='mar10'>{elem.num}</p></div>
-                            <div className='w200 Center fzm'><p>{elem.nameOfPaper}</p></div>
-                            <div className='w200 Center fzm'><p>{elem.expiredDate}</p></div>
+                            <div className='w200 Center fzm'><p>{elem.title}</p></div>
+                           
                            
                         </div>
                         <div className='w100 cCenter mar20'>
 
-                            <div className='h20 w20 br5 bgLightOrange cCenter mar5 pointer' onClick={()=>setViewReminderIsOpen(true)} >
+                            <div className='h20 w20 br5 bgLightOrange cCenter mar5 pointer' onClick={()=>setViewTemplateIsOpen(true)} >
                                 <img alt='eye' src={eye} className='' />
                             </div>
 
-                            <div className='h20 w20 br5 bgLightBlue cCenter  pointer' onClick={()=>setEditReminderIsOpen(true)} >
+                            <div className='h20 w20 br5 bgLightBlue cCenter  pointer' >
                                 <img alt='edit' src={edit} className='' />
                             </div>
 
-                            <div className='h20 w20 br5 bgLightRed cCenter mar5 pointer' onClick={()=>setDeleteReminderIsOpen(true)} >
+                            <div className='h20 w20 br5 bgLightRed cCenter mar5 pointer' onClick={()=>setDeleteTemplateIsOpen(true)} >
                                 <img alt='delete' src={trash} className='' />
                             </div>
 
@@ -70,4 +70,4 @@ function RemindersTable({setViewReminderIsOpen,setEditReminderIsOpen,setDeleteRe
   )
 }
 
-export default RemindersTable
+export default TemplateTable
