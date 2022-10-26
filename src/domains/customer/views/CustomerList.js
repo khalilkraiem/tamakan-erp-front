@@ -45,7 +45,7 @@ function CustomerList() {
               <p>Show</p>
               <SelectSmall
                 label="Num"
-                className="w70 h40"
+                className="w70 h30"
                 value={10}
                 data={[10, 20]}
               />
