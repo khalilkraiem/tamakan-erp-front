@@ -59,7 +59,7 @@ function QuotationTable({setDeleteCustomerIsOpen}) {
                     <div className='Center mar20'><p className='gray op08'>Showing 1 to 10 of 10 entries</p></div>
                     <div className='cCenter mar10'>
                         <LightButton content='← Previous' />
-                        <div className='bgBlue br5 lightGray cCenter fzs h40 w50 fzm '><p>1</p></div>
+                        <div className='bgBlue br5 lightGray cCenter fzs h30 w50 fzm '><p>1</p></div>
                         <LightButton content='Next →' />
                         
                     </div>

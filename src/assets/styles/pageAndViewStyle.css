@@ -22,15 +22,8 @@
     background-color: rgba(117, 117, 117, 0.719) !important;
 }
 
-/* Select MUI*/
+/* Select MUI localhost*/
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-    z-index: 0 !important;
-}
-.css-cktaik {
-    top: -5px !important;
-    z-index: 0 !important;
-}
-.css-u9osun {
     z-index: 0 !important;
 }
 .css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
@@ -41,7 +34,14 @@
 .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
     height: 30px !important;
 }
-
+/* Select MUI hosting */
+.css-cktaik {
+    top: -5px !important;
+    z-index: 0 !important;
+}
+.css-u9osun {
+    z-index: 0 !important;
+}
 /*datepicker*/
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
     height: 30px !important;
