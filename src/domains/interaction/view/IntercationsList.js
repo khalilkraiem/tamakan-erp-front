@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 function IntercationsList() {
     let navigate=useNavigate()
-    const [value,setValue]=useState('Sms')
+    const [value,setValue]=useState('')
   return (
     <div className=''>
       <div className='spaceBetween'>
